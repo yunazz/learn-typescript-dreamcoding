@@ -18,7 +18,9 @@ function move(direction: "up" | "down" | "left" | "right") {
       position.x += 1;
       break;
     default:
-      throw new Error(`unknown direction: ${direction}`);
+      // 컴파일 단계에서 에러 방지
+      const invalid: never = direction;
+      throw new Error(`unknown direction: ${invalid}`);
   }
 }
 
