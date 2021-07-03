@@ -1,7 +1,7 @@
 // Java: Exception
 // JavaScript: Error
 
-// Error(Exception) Handling: try -> catch -> finally
+// Error(Exception) Handling: try -> catch -> finally(error가 발생했어도 끝까지 실행되어야 하는 것들)
 
 function readFile(fileName: string): string {
   if (fileName === "not exist!💩") {
